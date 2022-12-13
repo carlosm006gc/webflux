@@ -13,7 +13,7 @@ import reactor.core.publisher.Mono;
 public class PlaylistServiceImpl implements PlaylistService{
 
 	@Autowired
-	private PlaylistRepository playlistRepository;
+	PlaylistRepository playlistRepository;
 	
 	@Override
 	public Flux<Playlist> findAll() {
